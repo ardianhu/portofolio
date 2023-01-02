@@ -1,3 +1,29 @@
+/*function main() {
+    document.getElementById("main").style.display = "block";
+    document.getElementById("section1").style.display = "none";
+    document.getElementById("section2").style.display = "none";
+    document.getElementById("section3").style.display = "none";
+}
+function satu() {
+    document.getElementById("section1").style.display = "block";
+    document.getElementById("main").style.display = "none";
+    document.getElementById("section2").style.display = "none";
+    document.getElementById("section3").style.display = "none";
+}
+function dua() {
+    document.getElementById("section2").style.display = "block";
+    document.getElementById("section1").style.display = "none";
+    document.getElementById("main").style.display = "none";
+    document.getElementById("section3").style.display = "none";
+}
+function tiga() {
+    document.getElementById("section3").style.display = "block";
+    document.getElementById("section1").style.display = "none";
+    document.getElementById("section2").style.display = "none";
+    document.getElementById("main").style.display = "none";
+}*/
+
+
 function showhide() {
   var x = document.getElementById("satu");
   if (x.style.display === "none") {
@@ -7,6 +33,9 @@ function showhide() {
   }
 }
 var utama = document.getElementById("main");
+
+    var lingkaran = document.getElementById("lingkaran");
+
 
 function main() {
     var satu = document.getElementById("section1");
@@ -18,6 +47,8 @@ function main() {
         satu.style.display = "none";
         dua.style.display = "none";
         tiga.style.display = "none";
+        lingkaran.classList.add("z-10");
+        
     }
 }
 
@@ -30,6 +61,7 @@ function satu() {
         dua.style.display = "none";
         tiga.style.display = "none";
         utama.style.display = "none";
+        lingkaran.classList.remove("z-10");
     }
 }
 function dua() {
@@ -41,6 +73,7 @@ function dua() {
         satu.style.display = "none";
         tiga.style.display = "none";
         utama.style.display = "none";
+        lingkaran.classList.remove("z-10");
     }
 }
 function tiga() {
@@ -52,5 +85,6 @@ function tiga() {
         dua.style.display = "none";
         satu.style.display = "none";
         utama.style.display = "none";
+        lingkaran.classList.remove("z-10");
     }
 }
