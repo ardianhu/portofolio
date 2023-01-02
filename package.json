@@ -1,0 +1,12 @@
+{
+  "name": "portofolio",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tailwind -i ./tail.css -o ./css/wind.css --watch"
+  },
+  "author": "ardianhu",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}
